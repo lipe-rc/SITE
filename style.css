@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+:root{
+    --color-font: #fff;
+    --font-family: 'Delicious Handrawn', cursive;
+    --font-mono: 'Space Mono', monospace;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+
+}
+
+html, body{
+    height: 2000px;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo{
+    width: 50%;
+}
+
+.area-menu{
+    width: 50%;
+}
+
+.menu{ 
+    width: 100%;
+    display: flex;
+}
+
+.menu ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+.menu ul li{
+    width: 33.3%;
+    text-align: center;
+    font-weight: 900;
+    color: var(--color-font);
+    transition: all 2s linear;
+}
+
+
+.menu ul li a{
+    color: var(--color-font);
+    text-decoration: none;
+    border-bottom:1px solid #fff;
+}
+
+.menu ul li a:hover{
+    color: greenyellow;
+    border-bottom: 1px solid greenyellow;
+    transition: all 1s linear;
+}
+
+.logo img{
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 50px;
+    border-radius:25px;
+}
+
+
+
+.image{
+    width: 100%;
+    height: 100%;
+}
+
+
+.texto-site{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.area-texto{
+    width: 50%;
+    text-align: center;
+}
+
+.area-texto h1{
+    color: green;
+    text-shadow: 5px 5px 3px black;
+    border-bottom: 1px solid #fff;
+    font-family: var(--font-family);
+}
+
+.area-texto button{
+    width: 50%;
+    padding: 13px;
+    background-color: rgb(40, 223, 40);
+    border: none;
+    border-radius:10px;
+    color: #fff;
+    font-weight:bold;
+    box-shadow: 3px 3px 30px rgb(40, 223, 40);
+    margin-bottom: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.area-texto button:hover{
+    background-color: rgb(137, 252, 137);
+    padding: 15px;
+    color: black;
+    transition: all 1s linear;
+}
+
+.project{
+    width: 100%;
+    margin-top: 120px;
+}
+
+.area-projeto{
+    width: 100%;
+    width: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 130px;
+}
+
+.area-projeto > div{
+    width: 200px;
+    height: 200px;
+    background-color: #964b00 ;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    transition: all 1s linear;
+    cursor: pointer;
+}
+
+.project h1{ 
+    width: 10ch;
+   text-align: center;
+   margin: 0 auto;
+   margin-top: 50px;
+   background-color: blueviolet;
+   border-radius: 5px;
+}
+
+.area-projeto > div p{
+    transform: rotate(-45deg);
+    margin-top: 100px;
+    text-align: center;
+    background: #552a00 ;
+    font-weight: 700;
+}
+
+.area-projeto > div:hover{
+    width: 220px;
+    height: 220px;
+}
+
+
+.roda{
+    width: 100%;
+    margin-top: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.roda address{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.roda address p{
+    margin-bottom: 5px;
+    text-align: center;
+    font-weight: 700;
+    color: #ccc;
+    font-family: var(--font-mono);
+}
+
+@media screen and (min-width:600px){
+    .area-projeto{
+        display: flex;
+        flex-direction: row;
+    }
+    body{
+        background-size: cover;
+        background-position: right;
+    }
+}
+
+
+@media screen and (max-width:599px){
+    .menu{
+        flex-direction: column-reverse;
+    }
+
+    .area-menu{
+        width: 100%;
+    }
+
+    .logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .roda{
+        margin-top: 600px;
+    }
+
+    .logo img{
+        margin: 0;
+        background: blueviolet;
+        border-radius: 25px;
+    }
+
+    .menu ul li{
+        font-size: 13px;
+    }
+
+    .area-texto h1{
+        font-size: 15px;
+    }
+
+    .area-texto button{
+        font-size: 15px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .project h1{
+        font-size:20px;
+    }
+
+    .texto-site{
+        margin-top: 130px;
+    }
+}
+
+@media screen and (max-width:230px){
+    .menu ul li{
+        font-size: 10px;
+    }
+
+    .area-texto button{
+        font-size:10px;
+    }
+
+    .area-texto h1{
+        font-size: 11px;
+    }
+
+    .texto-site{
+        margin-top: 75px;
+    }
+}
